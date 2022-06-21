@@ -1,5 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
+import Greeter from "../../src/artifacts/contracts/Greeter.sol"
+
+async function requestAccount(){
+  await window.ethereum.request({method: 'eth_requestAccounts'})
+}
 
 function App() {
   return (
